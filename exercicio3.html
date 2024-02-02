@@ -13,18 +13,18 @@
 
     velocidade do carro: <input type="number" name="txtvel" id="txtvel"> km\h
     <input type="button" value="verificar" onclick="calcular()">
-
-    <div>
+    <div id = "res">
+ 
+    </div>
     <script>
         function calcular() {
-            var txtvel = document.getElementById('txtvel')
-            var res = document.getElementById('vid#res')
-            var vel = Number(txtvel.value)
-            res.innerHTML = 'sua velocidade atual é ' + vel
+            var txtv = document.querySelector('input#txtvel')
+            var res = document.querySelector('div#res')
+            var vel = Number(txtv.value)
+            res.innerHTML = 'sua velocidade atual é ' + vel + km/h
 
         }
     </script>
-    </div>
 </body>
 
 </html>
