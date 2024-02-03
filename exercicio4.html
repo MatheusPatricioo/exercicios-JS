@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Medidor de velocidade</h1>
     <div>
@@ -14,14 +16,17 @@
     </div>
 
     <script>
+        var limite = 80;
         function minhafuncao() {
             var numero = document.getElementById("MinhaCaixaDeNumero").value;
-            if(numero >=10){
-            alert("ok: " + numero);
-            }else{  alert("alto: " + numero);
+            if (numero <= limite) {
+                alert("Você está dentro do limite, boa viagem!: " + numero);
+            } else {
+                alert("alerta de multa! reduza a velocidade: " + numero);
 
             }
         }
     </script>
 </body>
+
 </html>
