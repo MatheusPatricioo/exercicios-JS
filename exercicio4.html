@@ -11,7 +11,7 @@
     <h1>Medidor de velocidade</h1>
     <div>
         Medidor de velocidade media
-        <input type="number" id="MinhaCaixaDeNumero">
+        <input type="number" id="MinhaCaixaDeNumero"> km/h
         <button id="Button" class="Btt" onclick="minhafuncao()">Clique Aqui</button>
     </div>
 
@@ -20,9 +20,9 @@
         function minhafuncao() {
             var numero = document.getElementById("MinhaCaixaDeNumero").value;
             if (numero <= limite) {
-                alert("Você está dentro do limite, boa viagem!: " + numero);
+                alert("Você está dentro do limite, boa viagem! " + numero + " km/h");
             } else {
-                alert("alerta de multa! reduza a velocidade: " + numero);
+                alert("alerta de multa! reduza a velocidade " + numero + " km/h");
 
             }
         }
