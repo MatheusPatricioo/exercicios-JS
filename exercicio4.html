@@ -2,20 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h1>Titulo</h1>
+    <h1>Medidor de velocidade</h1>
     <div>
-        <input type="text" id="MinhaCaixaDeTexto">
+        Medidor de velocidade media
+        <input type="number" id="MinhaCaixaDeNumero">
         <button id="Button" class="Btt" onclick="minhafuncao()">Clique Aqui</button>
     </div>
 
     <script>
         function minhafuncao() {
-            // Aqui você pode colocar o código JavaScript para sua função
-            alert("O botão foi clicado!");
+            var numero = document.getElementById("MinhaCaixaDeNumero").value;
+            if(numero >=10){
+            alert("ok: " + numero);
+            }else{  alert("alto: " + numero);
+
+            }
         }
     </script>
 </body>
