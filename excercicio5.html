@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Qual seu país?</h1>
+    <div>
+        Conferindo passaporte
+        <input type="text" id="MinhaCaixaDeTexto">
+        <button id="Button" class="Btt" onclick="minhafuncao()">Clique Aqui</button>
+    </div>
+
+    <script>
+        var pais = 'Brasil';
+        function minhafuncao() {
+            var valorCaixa = document.getElementById("MinhaCaixaDeTexto").value;
+            if (valorCaixa === pais) {
+                alert("Você é Brasileiro " + valorCaixa + " Brasileirinho");
+            } else {
+                alert("Você não é Brasileiro " + valorCaixa + " manitoooo gringo gringo");
+            }
+        }
+    </script>
+</body>
+
+</html>
