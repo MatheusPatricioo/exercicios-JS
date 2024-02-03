@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exemplo de Botão e Caixa de Texto</title>
 </head>
-
 <body>
-    <h1>Deus ex machina</h1>
-    <p>Quem ta errado nessa confusão toda?</p>
-    <div>
-        <button id="Btt" class="botao-estilizado" onclick="minhaFuncao()">Clique Aqui</button>
-
-    </div>
+    <input type="text" id="minhaCaixaDeTexto">
+    <button onclick="exibirTexto()">Clique Aqui</button>
     <script>
-        function minhaFuncao(){
+        function exibirTexto() {
+            // Obtém o valor da caixa de texto
+            var texto = document.getElementById("minhaCaixaDeTexto").value;
             
+            // Exibe o texto em uma caixa de diálogo
+            alert(texto);
         }
     </script>
-    <script>
-        console.log("a");
-    </script>
 </body>
-
 </html>
