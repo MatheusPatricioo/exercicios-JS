@@ -5,10 +5,16 @@ while(a <=10){
     console.log('passo: ' + a )
     a++
 }
-*/
+
 var a =1;
 do {
      console.log('passo: ' + a)
 a ++
 } while(a <=10)
 
+*/
+
+var a =1;
+for(a=0; a<= 10; a++){
+    console.log('ola')
+}
