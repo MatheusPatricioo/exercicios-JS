@@ -12,9 +12,14 @@ do {
 a ++
 } while(a <=10)
 
-*/
+
 
 var a =1;
 for(a=0; a<= 10; a++){
     console.log('ola')
 }
+
+*/
+
+let num = [10,5,8,18]
+console.log(num)
