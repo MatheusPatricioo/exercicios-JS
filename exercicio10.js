@@ -1,6 +1,11 @@
-var repetições;
+var repeticoes;
 
-repetições = [1,2,3,5,6,98,74,2,3,5,98]
-repetições.sort((a,b) => a-b)
-for(a=0; a <= repetições.length; a++)
-console.log(repetições[a])
+repeticoes = [1, 2, 3, 5, 6, 98, 74, 2, 3, 5, 98];
+
+repeticoes.sort((a, b) => a - b);
+
+for (let a = 0; a < repeticoes.length; a++) {
+    if (repeticoes[a] % 2 !== 0) {
+        console.log(repeticoes[a]);
+    }
+}
