@@ -102,7 +102,7 @@ console.log("A menor posição é: " + menor)
 
 // Média dos Elementos: Escreva um programa que calcula a média dos elementos em um vetor de números inteiros.
 
-var num = [1, 2, 3, 5, 4, 7, 8, 5, 6];
+/*var num = [1, 2, 3, 5, 4, 7, 8, 5, 6];
 var soma = 0;
 
 // Somando todos os elementos do array
@@ -114,4 +114,13 @@ for (let i = 0; i < num.length; i++) {
 var media = soma / num.length;
 console.log(media);
 
+*/
+var vetor;
+var soma = 0;
+vetor = [1, 2, 3, 4, 5, 6];
 
+for (let a = 0; a < vetor.length; a++) {
+    soma += vetor[a];
+}
+
+console.log(soma);
