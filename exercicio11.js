@@ -113,3 +113,5 @@ for (let i = 0; i < num.length; i++) {
 // Calculando a média corretamente
 var media = soma / num.length;
 console.log(media);
+
+
