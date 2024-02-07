@@ -1,5 +1,4 @@
 /*Soma dos Elementos: Escreva um programa que calcula a soma de todos os elementos em um vetor de números inteiros.
-Soma dos Elementos: Escreva um programa que calcula a soma de todos os elementos em um vetor de números inteiros.
 
 Maior e Menor Elemento: Escreva um programa que encontre o maior e o menor elemento em um vetor de números inteiros.
 
@@ -19,9 +18,18 @@ Verificação de Elemento Único: Escreva um programa que verifique se um determ
 
 Combinação de Vetores: Escreva um programa que combine dois vetores em um terceiro vetor, alternando os elementos de cada vetor.*/
 
-var num;
-var  soma =0;
+// TOPICO1
+/*var num;
+var  soma =0; 
 num = [1, 2, 3, 5, 4, 7, 8, 5, 6]
 for (let i = 0; i < num.length; i++)
 soma += num[i];
-console.log(soma)
+console.log(soma) */
+
+//topico2
+var num;
+var  soma =0; 
+num = [1, 2, 3, 5, 4, 7, 8, 5, 6]
+for (let i = 0; i < num.length; i++)
+soma += num[i];
+
