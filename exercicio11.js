@@ -128,3 +128,17 @@ for(a=0; a< vet.length; a++){
 }
 
 */
+
+//Inversão do Vetor: Escreva um programa que inverta a ordem dos elementos em um vetor.
+function inverterVetor(vetor) {
+    let novoVetor = [];
+    for (let i = vetor.length - 1; i >= 0; i--) {
+        novoVetor.push(vetor[i]);
+    }
+    return novoVetor;
+}
+
+let vetorOriginal = [1, 2, 3, 4, 5];
+let vetorInvertido = inverterVetor(vetorOriginal);
+console.log("Vetor original:", vetorOriginal);
+console.log("Vetor invertido:", vetorInvertido);
