@@ -115,12 +115,16 @@ var media = soma / num.length;
 console.log(media);
 
 */
-var vetor;
-var soma = 0;
-vetor = [1, 2, 3, 4, 5, 6];
 
-for (let a = 0; a < vetor.length; a++) {
-    soma += vetor[a];
+/*
+// Contagem de Elementos Pares: Escreva um programa que conta quantos elementos pares existem em um vetor de números inteiros.
+
+var vet;
+vet = [1,1,2,2,3,5,6,4,8,9];
+for(a=0; a< vet.length; a++){
+    if(vet[a] % 2 ===0){
+        console.log(vet[a]);
+    }
 }
 
-console.log(soma);
+*/
