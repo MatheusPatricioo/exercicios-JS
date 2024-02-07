@@ -76,9 +76,8 @@ let { maiorPosicao, menorPosicao } = encontrarMaioreMenorValor(vet);
 console.log("A maior posição é: " + maiorPosicao)
 console.log("A menor posição é: " + menorPosicao)*/
 
-//function calcVet(vetor) {
 
-function maiorMenorPosição(vetor) {
+/* function maiorMenorPosição(vetor) {
     let maior = 0
     let menor = 0
 
@@ -99,4 +98,18 @@ let { maior, menor } = maiorMenorPosição(vetor);
 
 console.log("A maior posição é: " + maior)
 console.log("A menor posição é: " + menor)
+*/
 
+// Média dos Elementos: Escreva um programa que calcula a média dos elementos em um vetor de números inteiros.
+
+var num = [1, 2, 3, 5, 4, 7, 8, 5, 6];
+var soma = 0;
+
+// Somando todos os elementos do array
+for (let i = 0; i < num.length; i++) {
+    soma += num[i];
+}
+
+// Calculando a média corretamente
+var media = soma / num.length;
+console.log(media);
