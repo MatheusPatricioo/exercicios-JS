@@ -75,3 +75,30 @@ let { maiorPosicao, menorPosicao } = encontrarMaioreMenorValor(vet);
 
 console.log("A maior posição é: " + maiorPosicao)
 console.log("A menor posição é: " + menorPosicao)*/
+
+//function calcVet(vetor) {
+
+function posicaoMaiorMenor(vetor) {
+    let maior = 0;
+    let menor = 0;
+
+    for (let i = 0; i < vetor.length; i++) {
+        if (vetor[i] > vetor[maior]) {
+            maior = i;
+        }
+        if (vetor[i] < vetor[menor]) {
+            menor = i;
+        }
+    }
+    return { maior, menor };
+}
+
+let vetor = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let { maior, menor } = posicaoMaiorMenor(vetor);
+
+console.log("A maior posição é: " + maior);
+console.log("A menor posição é: " + menor);
+
+
+
+
