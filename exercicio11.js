@@ -26,7 +26,7 @@ for (let i = 0; i < num.length; i++)
 soma += num[i];
 console.log(soma) */
 
-//topico2: Maior e Menor Elemento: Escreva um programa que encontre o maior e o menor elemento em um vetor de números inteiros.
+/*//topico2: Maior e Menor Elemento: Escreva um programa que encontre o maior e o menor elemento em um vetor de números inteiros.
 function encontrarPosicaoMaiorMenor(vetor) {
     let posicaoMaior = 0;
     let posicaoMenor = 0;
@@ -49,7 +49,29 @@ let vetor = [10, 5, 3, 8, 15, 2, 9];
 let { posicaoMaior, posicaoMenor } = encontrarPosicaoMaiorMenor(vetor);
 
 console.log("Posição do maior valor:", posicaoMaior); // Deve retornar 4 (posição do valor 15)
-console.log("Posição do menor valor:", posicaoMenor); // Deve retornar 5 (posição do valor 2)
+console.log("Posição do menor valor:", posicaoMenor); // Deve retornar 5 (posição do valor 2)*/
 
+// EXERCICIO
 
+/* function encontrarMaioreMenorValor(vetor) {
+    let maiorPosicao = 0;
+    let menorPosicao = 0;
 
+    for (let i = 1; i < vetor.length; i++) {
+        if (vetor[i] > vetor[maiorPosicao]) {
+            maiorPosicao = i;
+        }
+
+        if (vetor[i] < vetor[menorPosicao]) {
+            menorPosicao = i;
+        }
+    }
+
+    return { maiorPosicao, menorPosicao };
+}
+
+let vet = [10,85,69,33,1,5,2,3,9,7,203]
+let { maiorPosicao, menorPosicao } = encontrarMaioreMenorValor(vet);
+
+console.log("A maior posição é: " + maiorPosicao)
+console.log("A menor posição é: " + menorPosicao)*/
