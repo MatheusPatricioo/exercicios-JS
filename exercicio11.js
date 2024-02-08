@@ -143,7 +143,3 @@ let vetorInvertido = inverterVetor(vetorOriginal);
 console.log("Vetor original:", vetorOriginal);
 console.log("Vetor invertido:", vetorInvertido);
 
-let vetorOriginal = [1, 2, 3, 4, 5];
-let vetorInvertido = inverterVetor(vetorOriginal);
-console.log("Vetor original:", vetorOriginal);
-console.log("Vetor invertido:", vetorInvertido);
