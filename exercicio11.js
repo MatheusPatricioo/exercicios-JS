@@ -150,16 +150,13 @@ console.log("O vetor invertido: " + vetorInvertido)
 
 
 
-const readlineSync = require('readline-sync');
-
-function exibirVetor(vetor) {
-    let ordem = readlineSync.question("Por favor, informe 'crescente' ou 'decrescente' como ordem:");
+function exibirVetor(vetor, ordem) {
     if (ordem === "crescente") {
         vetor.sort((a, b) => a - b);
     } else if (ordem === "decrescente") {
         vetor.sort((a, b) => b - a);
     } else {
-        console.log("Opção inválida. Por favor, especifique 'crescente' ou 'decrescente'.");
+        console.log("Por favor, especifique 'crescente' ou 'decrescente' como ordem.");
         return;
     }
 
@@ -170,5 +167,5 @@ function exibirVetor(vetor) {
 }
 
 let vetor = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-exibirVetor(vetor);
-
+exibirVetor(vetor, "crescente");
+exibirVetor(vetor, "decrescente");
