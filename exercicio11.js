@@ -157,6 +157,13 @@ function exibirVetor(vetor, ordem) {
         console.log("Por favor, especifique 'crescente' ou 'decrescente' como ordem.");
         return;
     }
-    console.log("vetor em ordem" + ordem + ":");
-    for (i = 0; i < vetor.length; i++)
+
+    console.log("Vetor em ordem " + ordem + ":");
+    for (let i = 0; i < vetor.length; i++) {
+        console.log(vetor[i]);
+    }
 }
+
+let vetor = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+exibirVetor(vetor, "crescente");
+exibirVetor(vetor, "decrescente");
