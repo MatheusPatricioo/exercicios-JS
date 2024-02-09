@@ -131,7 +131,7 @@ for(a=0; a< vet.length; a++){
 
 //Inversão do Vetor: Escreva um programa que inverta a ordem dos elementos em um vetor.
 
-function inverterVetor (vetor) {
+/* function inverterVetor (vetor) {
     let novoVetor = [];
     for ( let a = vetor.length -1; a >=0; a--) {
         novoVetor.push(vetor[a]);
@@ -143,3 +143,20 @@ let vetorOriginal = [1,2,3,4,5,6,7,8,9];
 let vetorInvertido = inverterVetor(vetorOriginal);
 console.log("O seu vetor original é: " + vetorOriginal)
 console.log("O vetor invertido: " + vetorInvertido)
+*/
+
+//Ordenação do Vetor: Escreva um programa que ordene
+//os elementos em um vetor em ordem crescente ou decrescente.
+
+function exibirVetor(vetor, ordem) {
+    if (ordem === "crescente") {
+        vetor.sort((a, b) => a - b);
+    } else if (ordem === "decrescente") {
+        vetor.sort((a, b) => b - a);
+    } else {
+        console.log("Por favor, especifique 'crescente' ou 'decrescente' como ordem.");
+        return;
+    }
+    console.log("vetor em ordem" + ordem + ":");
+    for (i = 0; i < vetor.length; i++)
+}
