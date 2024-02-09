@@ -148,8 +148,6 @@ console.log("O vetor invertido: " + vetorInvertido)
 //Ordenação do Vetor: Escreva um programa que ordene
 //os elementos em um vetor em ordem crescente ou decrescente.
 
-
-
 const readlineSync = require('readline-sync');
 
 function exibirVetor(vetor) {
@@ -171,4 +169,3 @@ function exibirVetor(vetor) {
 
 let vetor = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 exibirVetor(vetor);
-
