@@ -10,7 +10,7 @@ Inversão do Vetor: Escreva um programa que inverta a ordem dos elementos em um 
 
 Ordenação do Vetor: Escreva um programa que ordene os elementos em um vetor em ordem crescente ou decrescente.
 
-Remoção de Elemento: Escreva um programa que remova um elemento específico de um vetor.
+Remoção de Elemenssto: Escreva um programa que remova um elemento específico de um vetor.
 
 Intercalação de Vetores: Escreva um programa que intercale os elementos de dois vetores em um terceiro vetor.
 
