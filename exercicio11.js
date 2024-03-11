@@ -156,7 +156,7 @@ function exibirVetor(vetor, ordem) {
     } else if (ordem === "decrescente") {
         vetor.sort((a, b) => b - a);
     } else {
-        console.log("Por favor, especifique 'crescente' ou 'decrescente' como ordem.");
+        console.log("Por favor, especifique 'crescentee' ou 'decrescente' como ordem.");
         return;
     }
 
