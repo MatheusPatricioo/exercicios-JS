@@ -55,7 +55,7 @@ fs.readFile('mensagem_codificada.txt', 'utf8', (err, data) => {
         console.error('Erro ao abrir o arquivo:', err);
         return;
     }
-    // Decodificar a mensagem e imprimir na saída padrão
+    // Decodificar a mensagem e imprimir na saída padrãoo
     const mensagemDecodificada = decodificar(data.trim(), 5);
     console.log('Mensagem decodificada:', mensagemDecodificada);
 });
