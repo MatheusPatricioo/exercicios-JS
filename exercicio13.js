@@ -2,62 +2,60 @@ const fs = require('fs');
 
 // Função para decifrar uma letra usando a cifra de César
 function decifrar(letra, chave) {
-    if (letra >= 'A' && letra <= 'Z') {
-        let codigo = letra.charCodeAt(0) - chave;
-        if (codigo < 'A'.charCodeAt(0)) {
-            codigo = codigo + ('Z'.charCodeAt(0) - 'A'.charCodeAt(0) + 1);
+    const codigoA = 'A'.charCodeAt(0);
+    const codigoZ = 'Z'.charCodeAt(0);
+    let codigo = letra.charCodeAt(0);
+    if (codigo >= codigoA && codigo <= codigoZ) {
+        codigo -= chave;
+        if (codigo < codigoA) {
+            codigo += codigoZ - codigoA + 1;
         }
-        return String.fromCharCode(codigo);
     }
-    return letra;
+    return String.fromCharCode(codigo);
 }
 
-// Função para decifrar a mensagem
-function decifrarMensagem(mensagem) {
+// Função para realizar a decodificação da mensagem
+function decodificar(mensagemCodificada, chave) {
+    // Substituir espaços por #
+    mensagemCodificada = mensagemCodificada.replace(/ /g, '#');
+    // Completar com # se o tamanho for ímpar
+    if (mensagemCodificada.length % 2 !== 0) {
+        mensagemCodificada += '#';
+    }
+
+    // Decifrar a mensagem usando a cifra de César
     let mensagemDecifrada = '';
-    for (let i = 0; i < mensagem.length; i++) {
-        mensagemDecifrada += decifrar(mensagem[i], 5);
+    for (let i = 0; i < mensagemCodificada.length; i++) {
+        mensagemDecifrada += decifrar(mensagemCodificada[i], chave);
     }
-    return mensagemDecifrada;
-}
 
-// Função para inverter uma string
-function inverterString(str) {
-    return str.split('').reverse().join('');
-}
+    // Dividir a mensagem em blocos de 2 letras
+    const blocos = [];
+    for (let i = 0; i < mensagemDecifrada.length; i += 2) {
+        blocos.push(mensagemDecifrada.slice(i, i + 2));
+    }
 
-// Função para permutar os blocos de uma mensagem
-function permutarBlocos(mensagem) {
-    let blocos = mensagem.match(/.{1,2}/g); // Divide a mensagem em blocos de duas letras
+    // Refletir cada bloco
+    for (let i = 0; i < blocos.length; i++) {
+        blocos[i] = blocos[i].split('').reverse().join('');
+    }
+
+    // Permutar os blocos
     for (let i = 0, j = blocos.length - 1; i < j; i += 2, j -= 2) {
-        [blocos[i], blocos[j]] = [blocos[j], blocos[i]]; // Troca os blocos
+        [blocos[i], blocos[j]] = [blocos[j], blocos[i]];
     }
+
+    // Juntar os blocos e retornar a mensagem decifrada
     return blocos.join('');
 }
 
-// Função principal
-function main() {
-    fs.readFile('mensagem_codificada.txt', 'utf8', (err, data) => {
-        if (err) {
-            console.error('Erro ao abrir o arquivo:', err);
-            return;
-        }
-        // Substituir espaços por #
-        let mensagem = data.replace(/ /g, '#');
-        // Completar com # se a mensagem tiver tamanho ímpar
-        if (mensagem.length % 2 !== 0) {
-            mensagem += '#';
-        }
-        // Decifrar a mensagem
-        let mensagemDecifrada = decifrarMensagem(mensagem);
-        // Refletir os blocos
-        mensagemDecifrada = inverterString(mensagemDecifrada);
-        // Permutar os blocos
-        mensagemDecifrada = permutarBlocos(mensagemDecifrada);
-        // Imprimir mensagem decifrada
-        console.log('Mensagem decifrada:', mensagemDecifrada);
-    });
-}
-
-// Chamada da função principal
-main();
+// Ler a mensagem codificada do arquivo
+fs.readFile('mensagem_codificada.txt', 'utf8', (err, data) => {
+    if (err) {
+        console.error('Erro ao abrir o arquivo:', err);
+        return;
+    }
+    // Decodificar a mensagem e imprimir na saída padrão
+    const mensagemDecodificada = decodificar(data.trim(), 5);
+    console.log('Mensagem decodificada:', mensagemDecodificada);
+});
