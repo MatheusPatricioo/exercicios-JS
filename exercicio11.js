@@ -149,7 +149,7 @@ console.log("O vetor invertido: " + vetorInvertido)
 //os elementos em um vetor em ordem crescente ou decrescente.
 
 
-/*
+
 function exibirVetor(vetor, ordem) {
     if (ordem === "crescente") {
         vetor.sort((a, b) => a - b);
@@ -169,6 +169,6 @@ function exibirVetor(vetor, ordem) {
 let vetor = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 exibirVetor(vetor, "crescente");
 exibirVetor(vetor, "decrescente");
-*/
+
 
 
