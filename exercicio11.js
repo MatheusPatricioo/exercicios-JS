@@ -146,7 +146,7 @@ console.log("O vetor invertido: " + vetorInvertido)
 */
 
 //Ordenação do Vetor: Escreva um programa que ordene
-//os elementos em um vetor em ordem crescente ou decrescente.
+//os elementos em um vetor em ordem crescente ou decrescente....
 
 
 
