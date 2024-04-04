@@ -15,7 +15,7 @@ while (true) {
     // Verifica se a nota é válida (um número)
     if (!isNaN(nota)) {
         totalNotas += nota; // Adiciona a nota à soma total
-        quantidadeNotas++; // Incrementa a quantidade de notas inseridas
+        quantidadeNotas++; // Incrementa a quantidade de notas inseridassssss
     } else {
         alert("Por favor, digite um número válido."); // Exibe um alerta se a nota não for válida
     }
