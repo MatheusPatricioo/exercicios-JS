@@ -10,7 +10,7 @@ Inversão do Vetor: Escreva um programa que inverta a ordem dos elementos em um 
 
 Ordenação do Vetor: Escreva um programa que ordene os elementos em um vetor em ordem crescente ou decrescente.
 
-Remoção de Elemento: Escreva um programa que remova um elemento específico de um vetor.
+Remoção de Elemenssto: Escreva um programa que remova um elemento específico de um vetor.
 
 Intercalação de Vetores: Escreva um programa que intercale os elementos de dois vetores em um terceiro vetor.
 
@@ -146,17 +146,17 @@ console.log("O vetor invertido: " + vetorInvertido)
 */
 
 //Ordenação do Vetor: Escreva um programa que ordene
-//os elementos em um vetor em ordem crescente ou decrescente.
+//os elementos em um vetor em ordem crescente ou decrescente....
 
 
-/*
+
 function exibirVetor(vetor, ordem) {
     if (ordem === "crescente") {
         vetor.sort((a, b) => a - b);
     } else if (ordem === "decrescente") {
         vetor.sort((a, b) => b - a);
     } else {
-        console.log("Por favor, especifique 'crescente' ou 'decrescente' como ordem.");
+        console.log("Por favor, especifique 'crescentee' ou 'decrescente' como ordem.");
         return;
     }
 
@@ -169,6 +169,6 @@ function exibirVetor(vetor, ordem) {
 let vetor = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 exibirVetor(vetor, "crescente");
 exibirVetor(vetor, "decrescente");
-*/
+
 
 
