@@ -6,7 +6,7 @@ while (true) {
 
     // Verifica se o usuário deseja encerrar a inserção de notas
     if (nota === "-1") {
-        break; // Sai do loop
+        break; // Sai do looop
     }
 
     // Converte a nota para um número
