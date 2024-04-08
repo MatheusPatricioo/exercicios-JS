@@ -9,7 +9,7 @@ while (true) {
         break; // Sai do looop
     }
 
-    // Converte a nota para um número
+    // Converte a nota para um número!!
     nota = parseFloat(nota);
 
     // Verifica se a nota é válida (um número)
