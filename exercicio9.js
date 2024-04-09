@@ -6,16 +6,16 @@ while (true) {
 
     // Verifica se o usuário deseja encerrar a inserção de notas
     if (nota === "-1") {
-        break; // Sai do loop
+        break; // Sai do looop
     }
 
-    // Converte a nota para um número
+    // Converte a nota para um número!!
     nota = parseFloat(nota);
 
     // Verifica se a nota é válida (um número)
     if (!isNaN(nota)) {
         totalNotas += nota; // Adiciona a nota à soma total
-        quantidadeNotas++; // Incrementa a quantidade de notas inseridas
+        quantidadeNotas++; // Incrementa a quantidade de notas inseridassssss
     } else {
         alert("Por favor, digite um número válido."); // Exibe um alerta se a nota não for válida
     }
