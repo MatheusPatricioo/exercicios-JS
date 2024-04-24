@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "*.embeddedhtml": "html",
-        "exercicio1.C": "cpp"
+        "exercicio1.C": "cpp",
+        "calculadoraIMC.C": "cpp"
     }
 }
